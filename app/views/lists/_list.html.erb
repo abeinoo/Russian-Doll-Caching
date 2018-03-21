@@ -7,6 +7,7 @@
     <%#= render partial: "todos/form", locals: {list: list} %>
 
     <ul>
+      <!--this could do a multiget for the lists so that will do a speed improvement to get all of those, so that will get all of those, but what if we cached that entire set of lists into one giant html cache-->
       <%= render partial: 'todos/todo', collection: list.todos, cached: true %>
     </ul>
   </div>
